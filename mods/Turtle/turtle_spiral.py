@@ -1,7 +1,11 @@
 # coding: utf-8
 
 import turtle
-turtle.shape('turtle')
+
+# turtle.shape('turtle')
+turtle.speed(1)
+
+turtle.circle(50)
 
 i = 0
 j = 0
@@ -20,5 +24,6 @@ while i < 5:
         angle = 10
         continue
 
-
-    
+# answer = ''
+# while answer != 'N':
+answer = turtle.textinput('Введите че нить', 'Y/N')
