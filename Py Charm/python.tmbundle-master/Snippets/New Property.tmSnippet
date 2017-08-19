@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>@property
+def ${1:name}(self):
+	"${2:The $1 property.}"
+	${3:return self._$1}
+
+${4:@$1.setter
+def $1(self, value):
+	self._$1 = value}
+
+${5:@$1.deleter
+def $1(self):
+	del self._$1}$0</string>
+	<key>name</key>
+	<string>New Property</string>
+	<key>scope</key>
+	<string>source.python</string>
+	<key>tabTrigger</key>
+	<string>prop</string>
+	<key>uuid</key>
+	<string>14F76ADA-3380-4359-B5EF-F48B24884597</string>
+</dict>
+</plist>

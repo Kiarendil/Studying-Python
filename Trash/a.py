@@ -1,11 +1,17 @@
-def distance(x_1, y_1, x_2, y_2):
-    r = ((x_2 - x_1) ** 2 + (y_2 - y_1) ** 2) ** 0.5
+def power(a, n):
+    if n == 0:
+        return 1
 
-    return r
+    if n < 0:
+        n_m = -n
+        a_n = a * power(a, n_m - 1)
+        return 1 / a_n
 
-a = int(input())
-b = int(input())
-c = int(input())
-d = int(input())
+    if n > 0:
+        a_n = a * power(a, n - 1)
+        return a_n
 
-print(distance(a, b, c, d))
+a = float(input())
+n = int(input())
+
+print(power(a, n))
